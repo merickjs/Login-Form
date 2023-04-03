@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background: url("https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058_960_720.jpg");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5rem;
+background: white;
+height: 25rem;
+border-radius: 30px;
+}
+
+.mailbox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+.mailbox .title{
+    color: black;
+    text-align: center;
+    margin-bottom: 35px;   
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+    transition: all ease .5s;
+}
+.passwordbox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.fa-envelope{
+color: black;
+    position: absolute;
+    right: 4px;
+    bottom: 25px;
+
+}
+.fa-lock{
+color: black;
+    position: absolute;
+    right: 4px;
+    bottom: 25px;
+
+}
+.placeholder{
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    color: #bab6b6;
+    z-index: 1;
+    transition: all ease 0.3s;
+user-select: none;
+cursor: text;
+}
+
+input:focus + .placeholder{
+color: black;
+transform: translateY(-24px);
+} 
+input:valid + .placeholder{
+    transform: translateY(-24px);
+    color: black;
+}
+
+.detail-box{
+    display: flex;
+    padding: 15px;
+    color: black;
+    margin-top: 20px;
+    
+}
+.detail-box input{
+    margin: 3px;
+    width: 14px;
+}
+.detail-box label{
+    margin-right: 80px;
+}
+
+.detail-box a{
+    color: black;
+    text-decoration: none;
+}
+
+.detail-box a:hover{
+    text-decoration: underline;
+    
+}
+
+.submitbtn{
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submitbtn:hover{
+    opacity: 0.8;
+}
+
+p{
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+p span{
+    font-weight: 700;
+    cursor: pointer;
+}
